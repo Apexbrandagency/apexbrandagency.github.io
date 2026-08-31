@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex,nofollow">
+<title>Van de vloer · APEX</title>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Barlow+Condensed:wght@700;800;900&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="artikel.css">
+<style>
+.k-wrap{max-width:1080px;margin:0 auto;padding:150px 24px 80px}
+.k-header{margin-bottom:44px;max-width:720px}
+.k-header h1{margin-bottom:14px}
+.k-header p{font-size:18px;line-height:1.65;color:rgba(0,0,0,.65)}
+.kennis-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+.k-card{border:1.5px solid var(--k);background:#fff;display:flex;flex-direction:column;text-decoration:none;color:var(--k);transition:transform .2s,box-shadow .2s}
+.k-card:hover{transform:translate(-4px,-4px);box-shadow:6px 6px 0 var(--k)}
+.k-photo{padding:12px 12px 0}
+.k-photo img{width:100%;aspect-ratio:16/9;object-fit:cover;display:block;filter:saturate(.85)}
+.k-body{padding:20px 22px 26px;display:flex;flex-direction:column;flex:1}
+.k-kicker{font-family:var(--mono);font-size:9px;letter-spacing:2px;color:var(--o);text-transform:uppercase;margin-bottom:10px}
+.k-title{font-family:var(--con);font-size:24px;font-weight:900;line-height:1.1;margin-bottom:10px}
+.k-excerpt{font-size:14px;color:rgba(0,0,0,.6);line-height:1.55;flex:1;margin-bottom:16px}
+.k-more{font-family:var(--mono);font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--o);font-weight:700}
+@media(max-width:900px){.kennis-grid{grid-template-columns:1fr}.k-wrap{padding-top:130px}}
+</style>
+</head>
+<body class="grid-bg">
+<div class="concept-bar">
+  <span><em>CONCEPT_V2</em> // VAN DE VLOER // INTERN</span>
+  <span>APEX</span>
+</div>
+<nav>
+  <a href="../" class="nav-logo"><img src="/assets/logo.png" alt="APEX"></a>
+  <a href="../" class="nav-back">← Terug naar de site</a>
+</nav>
+
+<div class="k-wrap">
+  <div class="k-header">
+    <div class="art-kicker">Van de vloer</div>
+    <h1>Waarom wij doen wat wij doen</h1>
+    <p>Geen blog om het bloggen. Elk stuk hier legt uit waarom wij zo werken, met het onderzoek erbij. Lees deze drie en je begrijpt ons hele bureau.</p>
+  </div>
+  <div class="kennis-grid">
+    <a class="k-card" href="de-deal-valt-niet-in-je-feed.html">
+      <div class="k-photo"><img src="/assets/pain-keuken.jpg" alt=""></div>
+      <div class="k-body">
+        <div class="k-kicker">Onderzoek // 01</div>
+        <div class="k-title">De deal valt niet in je feed</div>
+        <p class="k-excerpt">800 nette mails leverden 7 aanmeldingen op. 160 persoonlijke berichten deden meer. Het onderzoek legt uit waarom dat geen toeval was.</p>
+        <span class="k-more">Lees het stuk →</span>
+      </div>
+    </a>
+    <a class="k-card" href="wie-de-demo-organiseert-wint.html">
+      <div class="k-photo"><img src="/assets/yield-vloer.jpg" alt=""></div>
+      <div class="k-body">
+        <div class="k-kicker">Onderzoek // 02</div>
+        <div class="k-title">Wie de demo organiseert, wint</div>
+        <p class="k-excerpt">91% van de inkopers zegt dat zelf testen de beslissing beïnvloedt. Slechts 52% test ooit echt. In dat gat ligt jouw omzet.</p>
+        <span class="k-more">Lees het stuk →</span>
+      </div>
+    </a>
+    <a class="k-card" href="chefs-vertrouwen-chefs.html">
+      <div class="k-photo"><img src="/assets/new-chefs.jpg" alt=""></div>
+      <div class="k-body">
+        <div class="k-kicker">Onderzoek // 03</div>
+        <div class="k-title">Chefs vertrouwen chefs</div>
+        <p class="k-excerpt">Unilever bewees het met eigen chefs: 98% volgersgroei in zeven weken. Nederland heeft nog geen chef-creatorprogramma. Nog niet.</p>
+        <span class="k-more">Lees het stuk →</span>
+      </div>
+    </a>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-logo"><img src="/assets/footer-logo.png" alt="APEX"></div>
+  <div class="footer-meta">VAN DE VLOER // APEX</div>
+</footer>
+</body>
+</html>

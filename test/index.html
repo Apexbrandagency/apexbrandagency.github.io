@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="noindex,nofollow">
-<title>APEX Agency — Concept</title>
+<title>APEX · Wij bezitten de vloer</title>
 <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Barlow+Condensed:wght@700;800;900&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
 :root {
@@ -31,57 +31,125 @@ body{background:var(--w);color:var(--k);font-family:var(--body);overflow-x:hidde
 .bracket-frame .bk-tr{top:0;right:0;border-width:4px 4px 0 0}
 .bracket-frame .bk-bl{bottom:0;left:0;border-width:0 0 4px 4px}
 
-/* CONCEPT BAR */
+/* CONCEPT BAR + PROGRESS */
 .concept-bar{position:fixed;top:0;left:0;right:0;z-index:300;background:var(--k);color:#fff;font-family:var(--mono);font-size:9px;letter-spacing:3px;text-transform:uppercase;padding:7px 40px;display:flex;justify-content:space-between}
 .concept-bar em{color:var(--o);font-style:normal}
+.scroll-progress{position:fixed;top:26px;left:0;height:3px;background:var(--o);z-index:301;width:0%}
 
 /* NAV */
-nav{position:fixed;top:28px;left:0;right:0;z-index:200;background:var(--w);border-bottom:1.5px solid var(--k);display:flex;align-items:center;justify-content:space-between;padding:0 40px;height:68px}
-.nav-logo img{height:38px;display:block}
-.nav-links{display:flex;gap:28px;list-style:none;align-items:center}
-.nav-links a{font-family:var(--mono);font-size:12px;letter-spacing:1.5px;text-transform:uppercase;color:var(--k);text-decoration:none;transition:color .15s;font-weight:700}
+nav{position:fixed;top:29px;left:0;right:0;z-index:200;background:var(--w);border-bottom:1.5px solid var(--k);display:flex;align-items:center;justify-content:space-between;padding:0 40px;height:64px}
+.nav-logo img{height:36px;display:block}
+.nav-links{display:flex;gap:24px;list-style:none;align-items:center}
+.nav-links a{font-family:var(--mono);font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:var(--k);text-decoration:none;transition:color .15s;font-weight:700}
 .nav-links a:hover{color:var(--o)}
-.lang-switch{font-family:var(--mono);font-size:11px;letter-spacing:1px;border:1.5px solid var(--k);display:flex}
-.lang-switch span{padding:6px 12px}
-.lang-switch .on{background:var(--k);color:#fff}
-.lang-switch .off{color:var(--g);cursor:not-allowed}
+.nav-cta{background:var(--o)!important;color:#fff!important;padding:9px 18px}
+.nav-cta:hover{background:var(--k)!important}
 
 /* HERO */
-#hero{padding-top:96px;display:grid;grid-template-columns:55fr 45fr;min-height:74vh;border-bottom:1.5px solid var(--k)}
-.hero-l{padding:52px 56px 68px;display:flex;flex-direction:column;justify-content:center;border-right:1.5px solid var(--k);position:relative}
+#hero{padding-top:93px;display:grid;grid-template-columns:58fr 42fr;min-height:78vh;border-bottom:1.5px solid var(--k)}
+.hero-l{padding:56px 56px 48px;display:flex;flex-direction:column;justify-content:center;border-right:1.5px solid var(--k)}
 .scan-id{font-family:var(--mono);font-size:9px;letter-spacing:2px;color:var(--g);margin-bottom:24px}
 .scan-id em{color:var(--o);font-style:normal}
-.hero-title{font-family:var(--con);font-size:clamp(48px,5.4vw,82px);font-weight:900;line-height:.93;color:var(--o);margin-bottom:22px;letter-spacing:-2px}
+.hero-title{font-family:var(--con);font-size:clamp(46px,5.2vw,80px);font-weight:900;line-height:.93;color:var(--o);margin-bottom:24px;letter-spacing:-2px}
 .hero-title .blk{color:var(--k)}
-.hero-sub{font-size:21px;line-height:1.5;color:var(--k);border-left:3px solid var(--o);padding-left:14px;margin-bottom:36px;font-weight:500}
-.btn-primary{display:inline-block;background:var(--o);color:#fff;font-family:var(--mono);font-size:11px;letter-spacing:2px;text-transform:uppercase;padding:15px 32px;text-decoration:none;border:2px solid var(--o);transition:all .2s;font-weight:700}
+.hero-sub{font-size:20px;line-height:1.55;color:var(--k);border-left:3px solid var(--o);padding-left:16px;margin-bottom:34px;font-weight:500;max-width:560px}
+.hero-sub strong{color:var(--o)}
+.hero-ctas{display:flex;gap:14px;flex-wrap:wrap}
+.btn-primary{display:inline-block;background:var(--o);color:#fff;font-family:var(--mono);font-size:11px;letter-spacing:2px;text-transform:uppercase;padding:15px 30px;text-decoration:none;border:2px solid var(--o);transition:all .2s;font-weight:700;cursor:pointer}
 .btn-primary:hover{background:transparent;color:var(--o)}
+.btn-ghost{display:inline-block;background:transparent;color:var(--k);font-family:var(--mono);font-size:11px;letter-spacing:2px;text-transform:uppercase;padding:15px 30px;text-decoration:none;border:2px solid var(--k);transition:all .2s;font-weight:700}
+.btn-ghost:hover{background:var(--k);color:#fff}
 .hero-r{display:flex;align-items:center;justify-content:center;padding:40px;background:var(--w)}
-.hero-r .bracket-frame{width:67%;max-width:420px}
+.hero-r .bracket-frame{width:70%;max-width:420px}
 .hero-r .bracket-frame img{aspect-ratio:3/4;object-fit:cover}
 
-/* BEWIJS */
-#bewijs{background:#111;padding:72px 60px}
-.bewijs-lbl{font-family:var(--mono);font-size:9px;letter-spacing:4px;color:rgba(255,255,255,.3);text-transform:uppercase;margin-bottom:8px}
-.bewijs-title{font-family:var(--con);font-size:clamp(40px,5vw,72px);font-weight:900;line-height:.93;color:#fff;margin-bottom:14px}
-.bewijs-title em{color:var(--o);font-style:normal}
-.bewijs-sub{font-size:17px;color:rgba(255,255,255,.5);margin-bottom:40px;max-width:640px;line-height:1.6}
-.video-wrap{max-width:880px;margin:0 auto}
-.video-frame{position:relative}
-.video-frame img{aspect-ratio:16/9;filter:brightness(.6) saturate(.85)}
-.video-play{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;z-index:4}
-.play-btn{width:76px;height:76px;border:3px solid #fff;border-radius:50%;display:flex;align-items:center;justify-content:center}
-.play-btn::after{content:'';border-left:22px solid #fff;border-top:13px solid transparent;border-bottom:13px solid transparent;margin-left:6px}
-.video-note{font-family:var(--mono);font-size:10px;letter-spacing:2px;color:#fff;text-transform:uppercase;background:var(--o);padding:6px 14px}
+/* TICKER */
+.ticker{background:var(--k);border-bottom:1.5px solid var(--k);overflow:hidden;padding:12px 0;white-space:nowrap}
+.ticker-track{display:inline-block;animation:tick 40s linear infinite}
+.ticker span{font-family:var(--mono);font-size:11px;letter-spacing:1.5px;color:#fff;text-transform:uppercase;padding:0 28px}
+.ticker span em{color:var(--o);font-style:normal;font-weight:700}
+@keyframes tick{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+/* ONDERZOEK / BEWIJS */
+#onderzoek{background:#111;padding:76px 60px;background-image:linear-gradient(rgba(255,255,255,.04) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.04) 1px,transparent 1px);background-size:40px 40px}
+.sec-lbl-d{font-family:var(--mono);font-size:9px;letter-spacing:4px;color:rgba(255,255,255,.3);text-transform:uppercase;margin-bottom:8px}
+.sec-title-d{font-family:var(--con);font-size:clamp(40px,5vw,74px);font-weight:900;line-height:.91;color:#fff;margin-bottom:16px}
+.sec-title-d em{color:var(--o);font-style:normal}
+.sec-sub-d{font-size:17px;color:rgba(255,255,255,.5);margin-bottom:48px;max-width:680px;line-height:1.65}
+.stat-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:2px;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.12);margin-bottom:36px}
+.stat-cell{background:#161616;padding:28px 24px;position:relative;transition:background .2s}
+.stat-cell:hover{background:#1d1d1d}
+.stat-num{font-family:var(--con);font-size:clamp(44px,4vw,64px);font-weight:900;color:var(--o);line-height:1}
+.stat-num small{font-size:.45em;color:rgba(255,255,255,.4)}
+.stat-claim{font-family:var(--con);font-size:18px;font-weight:700;color:#fff;line-height:1.25;margin:12px 0 10px}
+.stat-src{font-family:var(--mono);font-size:9px;letter-spacing:1px;color:rgba(255,255,255,.35);line-height:1.6}
+.stat-src a{color:rgba(255,255,255,.35);text-decoration:underline}
+.stat-src a:hover{color:var(--o)}
+.onderzoek-punch{font-family:var(--con);font-size:clamp(24px,2.8vw,42px);font-weight:900;color:#fff;line-height:1.2;border-left:4px solid var(--o);padding-left:22px;max-width:900px}
+.onderzoek-punch em{color:var(--o);font-style:normal}
+
+/* VLOERMONITOR */
+#vloermonitor{padding:76px 60px;border-bottom:1.5px solid var(--k)}
+.sec-lbl{font-family:var(--mono);font-size:9px;letter-spacing:4px;color:var(--g);text-transform:uppercase;margin-bottom:8px}
+.sec-title{font-family:var(--con);font-size:clamp(40px,5vw,74px);font-weight:900;line-height:.91;margin-bottom:16px}
+.sec-title em{color:var(--o);font-style:normal}
+.vm-inner{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start}
+.vm-l p{font-size:17px;line-height:1.7;color:rgba(0,0,0,.7);margin-bottom:18px;max-width:560px}
+.vm-l p strong{color:var(--o)}
+.vm-fact{border:1.5px solid var(--k);padding:20px 24px;margin:26px 0;background:#fff}
+.vm-fact .f-lbl{font-family:var(--mono);font-size:9px;letter-spacing:2px;color:var(--o);text-transform:uppercase;margin-bottom:8px}
+.vm-fact p{font-family:var(--con);font-size:21px;font-weight:700;line-height:1.3;color:var(--k);margin:0;max-width:none}
+.vm-r{border:1.5px solid var(--k);background:#fff}
+.vm-r-head{background:var(--k);color:#fff;padding:16px 24px;display:flex;justify-content:space-between;align-items:center}
+.vm-r-head .t{font-family:var(--con);font-size:22px;font-weight:900}
+.vm-r-head .e{font-family:var(--mono);font-size:9px;letter-spacing:2px;color:var(--o)}
+.vm-row{display:flex;justify-content:space-between;align-items:baseline;padding:16px 24px;border-bottom:1px solid rgba(0,0,0,.1)}
+.vm-row:last-child{border-bottom:none}
+.vm-row .q{font-size:15px;font-weight:600;color:var(--k);max-width:70%}
+.vm-row .a{font-family:var(--mono);font-size:11px;letter-spacing:1px;color:var(--g)}
+.vm-row .a.hot{color:var(--o);font-weight:700}
+
+/* VLOERTOETS */
+#vloertoets{background:var(--o);padding:76px 60px}
+.vt-header{max-width:760px;margin-bottom:40px}
+.vt-lbl{font-family:var(--mono);font-size:9px;letter-spacing:3px;color:rgba(255,255,255,.6);text-transform:uppercase;margin-bottom:10px}
+.vt-header h2{font-family:var(--con);font-size:clamp(44px,5.5vw,80px);font-weight:900;color:#fff;line-height:.91;margin-bottom:18px}
+.vt-header p{font-size:17px;color:rgba(255,255,255,.9);line-height:1.65}
+.vt-box{background:var(--w);border:2px solid var(--k);max-width:860px;box-shadow:10px 10px 0 rgba(0,0,0,.25)}
+.vt-top{display:flex;justify-content:space-between;align-items:center;background:var(--k);padding:12px 24px}
+.vt-top .t{font-family:var(--mono);font-size:10px;letter-spacing:2px;color:#fff;text-transform:uppercase}
+.vt-top .n{font-family:var(--mono);font-size:10px;letter-spacing:2px;color:var(--o)}
+.vt-progress{height:5px;background:rgba(0,0,0,.12)}
+.vt-progress-fill{height:100%;background:var(--o);width:0%;transition:width .3s}
+.vt-body{padding:40px 44px}
+.vt-linie{font-family:var(--mono);font-size:10px;letter-spacing:3px;color:var(--o);text-transform:uppercase;margin-bottom:14px}
+.vt-q{font-family:var(--con);font-size:clamp(24px,2.6vw,36px);font-weight:900;line-height:1.15;color:var(--k);margin-bottom:30px;min-height:84px}
+.vt-answers{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.vt-btn{font-family:var(--mono);font-size:12px;letter-spacing:2px;text-transform:uppercase;font-weight:700;padding:18px 12px;background:#fff;border:2px solid var(--k);color:var(--k);cursor:pointer;transition:all .15s}
+.vt-btn:hover{background:var(--k);color:#fff}
+.vt-start-wrap{padding:44px;text-align:left}
+.vt-start-wrap p{font-size:16px;line-height:1.65;color:rgba(0,0,0,.65);margin-bottom:26px}
+/* uitslag */
+.vt-result{padding:40px 44px;display:none}
+.vt-verdict-lbl{font-family:var(--mono);font-size:10px;letter-spacing:3px;color:var(--o);text-transform:uppercase;margin-bottom:12px}
+.vt-verdict{font-family:var(--con);font-size:clamp(26px,3vw,40px);font-weight:900;line-height:1.1;margin-bottom:14px}
+.vt-verdict-body{font-size:16px;line-height:1.65;color:rgba(0,0,0,.7);margin-bottom:28px}
+.vt-bars{display:flex;flex-direction:column;gap:12px;margin-bottom:30px}
+.vt-bar-row{display:grid;grid-template-columns:110px 1fr 40px;gap:14px;align-items:center}
+.vt-bar-row .lbl{font-family:var(--mono);font-size:10px;letter-spacing:1.5px;text-transform:uppercase;color:var(--k);font-weight:700}
+.vt-bar-track{height:14px;background:rgba(0,0,0,.1);border:1.5px solid var(--k)}
+.vt-bar-fill{height:100%;background:var(--o);width:0;transition:width .8s ease}
+.vt-bar-row .sc{font-family:var(--mono);font-size:11px;color:var(--g);text-align:right}
+.vt-cta-row{display:flex;gap:12px;flex-wrap:wrap}
+.vt-note{font-family:var(--mono);font-size:9px;letter-spacing:1px;color:var(--g);margin-top:18px}
 
 /* LABELS */
-#labels{padding:72px 60px}
-.section-lbl{font-family:var(--mono);font-size:9px;letter-spacing:4px;color:var(--g);text-transform:uppercase;margin-bottom:8px}
-.section-title{font-family:var(--con);font-size:clamp(40px,5vw,72px);font-weight:900;line-height:.91;margin-bottom:14px}
-.section-title em{color:var(--o);font-style:normal}
-.section-sub{font-size:17px;color:rgba(0,0,0,.6);margin-bottom:44px;max-width:640px;line-height:1.6}
+#labels{padding:76px 60px}
+.sec-sub{font-size:17px;color:rgba(0,0,0,.6);margin-bottom:44px;max-width:660px;line-height:1.65}
+.sec-sub strong{color:var(--o)}
 .label-grid{display:grid;grid-template-columns:repeat(4,1fr);border:1.5px solid var(--k)}
-.label-card{border-right:1.5px solid var(--k);display:flex;flex-direction:column}
+.label-card{border-right:1.5px solid var(--k);display:flex;flex-direction:column;transition:transform .2s,box-shadow .2s;background:var(--w)}
+.label-card:hover{transform:translate(-4px,-4px);box-shadow:6px 6px 0 var(--o);z-index:2}
 .label-card:last-child{border-right:none}
 .label-photo{padding:14px 14px 0}
 .label-photo img{width:100%;aspect-ratio:4/3;object-fit:cover;display:block;filter:saturate(.88)}
@@ -90,18 +158,15 @@ nav{position:fixed;top:28px;left:0;right:0;z-index:200;background:var(--w);borde
 .label-name{font-family:var(--con);font-size:24px;font-weight:900;margin-bottom:10px;line-height:1}
 .label-desc{font-size:14px;color:rgba(0,0,0,.6);line-height:1.5;margin-bottom:16px;flex:1}
 .label-stat{border-top:1.5px solid var(--k);padding-top:12px}
-.label-stat .num{font-family:var(--con);font-size:34px;font-weight:900;color:var(--o);line-height:1}
+.label-stat .num{font-family:var(--con);font-size:30px;font-weight:900;color:var(--o);line-height:1}
 .label-stat .num.todo{color:var(--g);letter-spacing:2px}
 .label-stat .what{font-family:var(--mono);font-size:9px;letter-spacing:1.5px;color:var(--g);text-transform:uppercase;margin-top:4px}
 
 /* TREDEN */
-#treden{background:#111;padding:72px 60px;background-image:linear-gradient(rgba(255,255,255,.04) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.04) 1px,transparent 1px);background-size:40px 40px}
-.treden-lbl{font-family:var(--mono);font-size:9px;letter-spacing:4px;color:rgba(255,255,255,.3);text-transform:uppercase;margin-bottom:8px}
-.treden-title{font-family:var(--con);font-size:clamp(40px,5vw,72px);font-weight:900;line-height:.91;color:#fff;margin-bottom:14px}
-.treden-title em{color:var(--o);font-style:normal}
-.treden-sub{font-size:17px;color:rgba(255,255,255,.45);margin-bottom:44px;line-height:1.6;max-width:640px}
+#treden{background:#111;padding:76px 60px;background-image:linear-gradient(rgba(255,255,255,.04) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.04) 1px,transparent 1px);background-size:40px 40px}
 .treden-grid{display:grid;grid-template-columns:repeat(3,1fr);border:1px solid rgba(255,255,255,.12);margin-bottom:48px}
-.trede{padding:32px 28px;border-right:1px solid rgba(255,255,255,.12);display:flex;flex-direction:column}
+.trede{padding:32px 28px;border-right:1px solid rgba(255,255,255,.12);display:flex;flex-direction:column;transition:background .2s}
+.trede:hover{background:rgba(255,255,255,.04)}
 .trede:last-child{border-right:none}
 .trede-num{font-family:var(--mono);font-size:10px;color:var(--o);letter-spacing:2px;margin-bottom:12px}
 .trede-name{font-family:var(--con);font-size:28px;font-weight:900;color:#fff;margin-bottom:4px}
@@ -119,41 +184,53 @@ nav{position:fixed;top:28px;left:0;right:0;z-index:200;background:var(--w);borde
 .deliv-list li strong{color:#fff}
 
 /* MEETBAAR */
-#meetbaar{background:var(--o);padding:72px 60px}
+#meetbaar{padding:76px 60px;border-bottom:1.5px solid var(--k)}
 .meet-inner{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
-.meet-lbl{font-family:var(--mono);font-size:9px;letter-spacing:3px;color:rgba(255,255,255,.6);text-transform:uppercase;margin-bottom:10px}
-.meet-l h2{font-family:var(--con);font-size:clamp(44px,5.5vw,80px);font-weight:900;color:#fff;line-height:.91;margin-bottom:20px}
-.meet-l p{font-size:17px;color:rgba(255,255,255,.88);line-height:1.65}
-.meet-points{display:flex;flex-direction:column;gap:2px;background:rgba(0,0,0,.2)}
-.meet-point{background:rgba(255,255,255,.12);padding:20px 24px;display:flex;gap:16px;align-items:baseline}
-.meet-point .mono{font-family:var(--mono);font-size:10px;color:rgba(255,255,255,.55);letter-spacing:2px;flex:0 0 32px}
-.meet-point p{font-family:var(--con);font-size:20px;font-weight:700;color:#fff;line-height:1.3}
-.meet-point p em{font-style:normal;color:rgba(255,255,255,.55);font-family:var(--body);font-size:14px;font-weight:400;display:block;margin-top:2px}
+.meet-l h2{font-family:var(--con);font-size:clamp(44px,5.5vw,80px);font-weight:900;line-height:.91;margin-bottom:20px}
+.meet-l h2 em{color:var(--o);font-style:normal}
+.meet-l p{font-size:17px;color:rgba(0,0,0,.65);line-height:1.65}
+.meet-points{display:flex;flex-direction:column;border:1.5px solid var(--k)}
+.meet-point{padding:20px 24px;display:flex;gap:16px;align-items:baseline;border-bottom:1.5px solid var(--k)}
+.meet-point:last-child{border-bottom:none}
+.meet-point .mono{font-family:var(--mono);font-size:10px;color:var(--o);letter-spacing:2px;flex:0 0 32px;font-weight:700}
+.meet-point p{font-family:var(--con);font-size:20px;font-weight:700;color:var(--k);line-height:1.3}
+.meet-point p em{font-style:normal;color:var(--g);font-family:var(--body);font-size:14px;font-weight:400;display:block;margin-top:2px}
 
-/* AFSLUITING */
-#contact{padding:72px 60px}
+/* KENNIS */
+#kennis{padding:76px 60px;background:var(--w)}
+.kennis-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+.k-card{border:1.5px solid var(--k);background:#fff;display:flex;flex-direction:column;text-decoration:none;color:var(--k);transition:transform .2s,box-shadow .2s}
+.k-card:hover{transform:translate(-4px,-4px);box-shadow:6px 6px 0 var(--k)}
+.k-photo{padding:12px 12px 0}
+.k-photo img{width:100%;aspect-ratio:16/9;object-fit:cover;display:block;filter:saturate(.85)}
+.k-body{padding:20px 22px 26px;display:flex;flex-direction:column;flex:1}
+.k-kicker{font-family:var(--mono);font-size:9px;letter-spacing:2px;color:var(--o);text-transform:uppercase;margin-bottom:10px}
+.k-title{font-family:var(--con);font-size:24px;font-weight:900;line-height:1.1;margin-bottom:10px}
+.k-excerpt{font-size:14px;color:rgba(0,0,0,.6);line-height:1.55;flex:1;margin-bottom:16px}
+.k-more{font-family:var(--mono);font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--o);font-weight:700}
+
+/* CONTACT */
+#contact{padding:76px 60px;background:#111;background-image:linear-gradient(rgba(255,255,255,.04) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.04) 1px,transparent 1px);background-size:40px 40px}
 .contact-header{margin-bottom:44px;max-width:720px}
-.contact-header h2{font-family:var(--con);font-size:clamp(36px,4.5vw,64px);font-weight:900;line-height:.91;margin-bottom:16px}
+.contact-header h2{font-family:var(--con);font-size:clamp(36px,4.5vw,64px);font-weight:900;line-height:.91;margin-bottom:16px;color:#fff}
 .contact-header h2 em{color:var(--o);font-style:normal}
-.contact-header p{font-size:17px;line-height:1.7;color:rgba(0,0,0,.6)}
-.team-grid{display:grid;grid-template-columns:repeat(3,1fr);border:1.5px solid var(--k)}
-.tcard{border-right:1.5px solid var(--k)}
-.tcard:last-child{border-right:none}
-.tcard-photo-wrap{padding:16px 16px 0}
-.tcard-photo-wrap .bracket-frame{padding:10px}
-.tcard-photo{width:100%;aspect-ratio:1/1;object-fit:cover;object-position:top center;display:block;filter:saturate(.88)}
-.tcard-divider{height:1.5px;background:var(--k);margin-top:16px}
-.tcard-body{padding:22px 22px 26px}
-.tcard-name{font-family:var(--con);font-size:22px;font-weight:800;margin-bottom:3px}
+.contact-header p{font-size:17px;line-height:1.7;color:rgba(255,255,255,.55)}
+.team-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.12)}
+.tcard{background:#161616;padding:20px}
+.tcard .bracket-frame{padding:10px}
+.tcard-photo{width:100%;aspect-ratio:1/1;object-fit:cover;object-position:top center;display:block;filter:saturate(.85)}
+.tcard-name{font-family:var(--con);font-size:22px;font-weight:800;margin:16px 0 3px;color:#fff}
 .tcard-role{font-family:var(--mono);font-size:9px;letter-spacing:2px;color:var(--o);text-transform:uppercase;margin-bottom:14px}
-.tcard-phone{display:inline-block;font-family:var(--con);font-size:24px;font-weight:900;color:var(--k);text-decoration:none;margin-bottom:6px}
-.tcard-phone:hover{color:var(--o)}
-.tcard-mail{font-family:var(--mono);font-size:11px}
-.tcard-mail a{color:var(--o);text-decoration:none}
+.tcard-actions{display:flex;gap:10px}
+.tbtn{flex:1;text-align:center;font-family:var(--mono);font-size:10px;letter-spacing:2px;text-transform:uppercase;font-weight:700;padding:12px 8px;text-decoration:none;border:2px solid var(--o);color:#fff;transition:all .15s}
+.tbtn.fill{background:var(--o)}
+.tbtn:hover{background:#fff;color:var(--k);border-color:#fff}
 
-footer{background:var(--k);padding:40px 60px;display:flex;align-items:center;justify-content:space-between;border-top:2px solid var(--o)}
-.footer-logo img{height:44px;display:block}
+footer{background:var(--k);padding:36px 60px;display:flex;align-items:center;justify-content:space-between;border-top:2px solid var(--o)}
+.footer-logo img{height:40px;display:block}
 .footer-meta{font-family:var(--mono);font-size:9px;letter-spacing:2px;color:var(--g);line-height:2.2;text-align:right}
+.footer-meta a{color:var(--g);text-decoration:none}
+.footer-meta a:hover{color:var(--o)}
 
 .reveal{opacity:0;transform:translateY(14px);transition:opacity .6s ease,transform .6s ease}
 .reveal.on{opacity:1;transform:translateY(0)}
@@ -164,10 +241,14 @@ footer{background:var(--k);padding:40px 60px;display:flex;align-items:center;jus
   .nav-links{display:none}
   #hero{grid-template-columns:1fr;min-height:auto;padding-top:84px}
   .hero-l{padding:40px 24px 48px;border-right:none}
-  .hero-title{font-size:clamp(40px,11vw,64px)}
+  .hero-title{font-size:clamp(38px,10vw,60px)}
   .hero-r{padding:24px;border-top:1.5px solid var(--k)}
   .hero-r .bracket-frame{width:85%}
-  #bewijs,#labels,#treden,#meetbaar,#contact{padding:56px 24px}
+  #onderzoek,#vloermonitor,#vloertoets,#labels,#treden,#meetbaar,#kennis,#contact{padding:56px 24px}
+  .stat-grid{grid-template-columns:1fr 1fr}
+  .vm-inner{grid-template-columns:1fr;gap:36px}
+  .vt-body,.vt-result,.vt-start-wrap{padding:28px 22px}
+  .vt-answers{grid-template-columns:1fr}
   .label-grid{grid-template-columns:1fr 1fr}
   .label-card{border-bottom:1.5px solid var(--k)}
   .label-card:nth-child(even){border-right:none}
@@ -177,50 +258,47 @@ footer{background:var(--k);padding:40px 60px;display:flex;align-items:center;jus
   .trede:last-child{border-bottom:none}
   .deliv-list{grid-template-columns:1fr}
   .meet-inner{grid-template-columns:1fr;gap:36px}
+  .kennis-grid{grid-template-columns:1fr}
   .team-grid{grid-template-columns:1fr}
-  .tcard{border-right:none;border-bottom:1.5px solid var(--k)}
-  .tcard:last-child{border-bottom:none}
   footer{flex-direction:column;gap:16px;text-align:center;padding:32px 24px}
   .footer-meta{text-align:center}
 }
 @media(max-width:480px){
+  .stat-grid{grid-template-columns:1fr}
   .label-grid{grid-template-columns:1fr}
-  .label-card{border-right:none!important;border-bottom:1.5px solid var(--k)!important}
-  .label-card:last-child{border-bottom:none!important}
+  .label-card{border-right:none!important}
 }
 </style>
 </head>
 <body>
 
 <div class="concept-bar">
-  <span><em>CONCEPT_V1</em> // NIEUWE SITE // INTERN</span>
+  <span><em>CONCEPT_V2</em> // NIEUWE SITE // INTERN</span>
   <span>DEADLINE: LIVE WK VOOR GASTVRIJ</span>
 </div>
+<div class="scroll-progress" id="scrollProgress"></div>
 
 <nav>
   <a href="#" class="nav-logo"><img src="/assets/logo.png" alt="APEX"></a>
   <ul class="nav-links">
-    <li><a href="#bewijs">Bewijs</a></li>
-    <li><a href="#labels">Labels</a></li>
+    <li><a href="#onderzoek">Het bewijs</a></li>
+    <li><a href="#vloermonitor">Vloermonitor</a></li>
+    <li><a href="#labels">De labels</a></li>
     <li><a href="#treden">Wat je krijgt</a></li>
-    <li><a href="#meetbaar">Meetbaar</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li>
-      <div class="lang-switch" title="Engelse versie volgt in fase 2">
-        <span class="on">NL</span><span class="off">EN</span>
-      </div>
-    </li>
+    <li><a href="kennis/">Van de vloer</a></li>
+    <li><a href="#vloertoets" class="nav-cta">Doe de Vloertoets</a></li>
   </ul>
 </nav>
 
-<!-- 1. HERO: de claim, niet de pijn -->
+<!-- 1. HERO -->
 <section id="hero" class="grid">
   <div class="hero-l">
-    <div class="scan-id reveal"><em>APEX</em> &nbsp; WIJ_STAAN_IN_DE_MARKT</div>
+    <div class="scan-id reveal"><em>APEX</em> &nbsp; WIJ_HUREN_GEEN_BEREIK_IN__WIJ_BEZITTEN_HET</div>
     <h1 class="hero-title reveal"><span class="blk">Wij staan in de<br>wereld van de chef.</span><br>Wij zorgen dat de vloer<br>je kiest en verkoopt.</h1>
-    <p class="hero-sub reveal">Geen bureau dat over de keuken praat.<br>Een team dat erin staat. Elke week.</p>
-    <div class="reveal">
-      <a href="#contact" class="btn-primary">Bel of app ons direct</a>
+    <p class="hero-sub reveal">Elk bureau kan bereik voor je inkopen. Wij hoeven dat niet: <strong>wij bezitten het.</strong> Vier eigen labels in de professionele keuken, en het eerste openbare chef-onderzoek van Nederland.</p>
+    <div class="hero-ctas reveal">
+      <a href="#vloertoets" class="btn-primary">Doe de Vloertoets</a>
+      <a href="#onderzoek" class="btn-ghost">Eerst het bewijs</a>
     </div>
   </div>
   <div class="hero-r reveal">
@@ -231,38 +309,134 @@ footer{background:var(--k);padding:40px 60px;display:flex;align-items:center;jus
   </div>
 </section>
 
-<!-- 2. BEWIJS IN BEELD (+ de yield-vraag) -->
-<section id="bewijs" class="grid-dark">
-  <div class="bewijs-lbl">Bewijs in beeld</div>
-  <h2 class="bewijs-title reveal">Niet vertellen.<br><em>Laten zien.</em></h2>
-  <p class="bewijs-sub reveal">60 tot 90 seconden van waar wij staan: 24H Chefs, New Chefs, CuliQuiz en de events. Geen voice-over vol beloftes. En daarna de vraag die telt: wat levert één euro marketing bij jou op?</p>
-  <div class="video-wrap reveal">
-    <div class="bracket-frame video-frame">
-      <div class="bk-tr"></div><div class="bk-bl"></div>
-      <img src="/assets/24h-chefs.jpg" alt="Video: op de vloer">
-      <div class="video-play">
-        <div class="play-btn"></div>
-        <div class="video-note">Video volgt — beelden zijn er</div>
+<!-- TICKER -->
+<div class="ticker" aria-hidden="true">
+  <div class="ticker-track" id="tickerTrack">
+    <span><em>88%</em> vertrouwt aanbevelingen van bekenden boven elk ander kanaal</span>
+    <span><em>3 van de 4</em> beslisbronnen van foodservice-inkopers zijn persoon-tot-persoon</span>
+    <span>social media is de <em>minst</em> gebruikte beslisbron</span>
+    <span><em>91%</em> zegt: zelf testen beïnvloedt de koopbeslissing</span>
+    <span>maar slechts <em>52%</em> test ooit echt</span>
+    <span>chefs vertrouwen chefs, <em>niet</em> merken</span>
+  </div>
+</div>
+
+<!-- 2. HET BEWIJS -->
+<section id="onderzoek">
+  <div class="sec-lbl-d">Waarom wij zo werken</div>
+  <h2 class="sec-title-d reveal">De koopbeslissing van een chef<br>valt niet in je feed. <em>Hij valt op de vloer.</em></h2>
+  <p class="sec-sub-d reveal">Dit is geen mening, het is gemeten. Wij bouwden APEX op onderzoek naar hoe chefs en foodservice-inkopers écht kiezen. De cijfers hieronder zijn geverifieerd tot op de primaire bron.</p>
+  <div class="stat-grid reveal">
+    <div class="stat-cell">
+      <div class="stat-num"><span class="count" data-target="3">0</span><small> van 4</small></div>
+      <div class="stat-claim">van de belangrijkste beslisbronnen van foodservice-inkopers zijn persoon-tot-persoon. Social media staat onderaan.</div>
+      <div class="stat-src">Restaurant Business / FoodService Director, Path to Purchase, 2021</div>
+    </div>
+    <div class="stat-cell">
+      <div class="stat-num"><span class="count" data-target="91">0</span><small>%</small></div>
+      <div class="stat-claim">van operators zegt: zelf testen beïnvloedt de koopbeslissing positief. Maar slechts 52% test ooit echt. Wie de demo organiseert, wint.</div>
+      <div class="stat-src">FE&amp;S Operator Purchasing Study, 2018</div>
+    </div>
+    <div class="stat-cell">
+      <div class="stat-num"><span class="count" data-target="88">0</span><small>%</small></div>
+      <div class="stat-claim">vertrouwt aanbevelingen van mensen die ze kennen. Meer dan welk ander kanaal ook.</div>
+      <div class="stat-src">Nielsen Trust in Advertising, 2021, 40.000+ respondenten</div>
+    </div>
+    <div class="stat-cell">
+      <div class="stat-num"><span class="count" data-target="73">0</span><small>%</small></div>
+      <div class="stat-claim">van zakelijke beslissers vindt expertcontent betrouwbaarder dan marketingmateriaal. 60% betaalt er zelfs meer voor.</div>
+      <div class="stat-src">Edelman-LinkedIn B2B Thought Leadership, 2024</div>
+    </div>
+  </div>
+  <div class="onderzoek-punch reveal">Toen Unilever Food Solutions eigen chefs tot creators maakte, was hun conclusie letterlijk: <em>"chefs trust other chefs far more than they trust brands."</em> Precies daarom bezitten wij de plekken waar chefs elkaar vertrouwen.</div>
+</section>
+
+<!-- 3. VLOERMONITOR -->
+<section id="vloermonitor" class="grid">
+  <div class="sec-lbl">Ons eigen onderzoek</div>
+  <h2 class="sec-title reveal">De Vloermonitor.<br><em>Hoe kiest de Nederlandse chef?</em></h2>
+  <div class="vm-inner">
+    <div class="vm-l reveal">
+      <p>Elk kwartaal leggen wij chefs dezelfde vragen voor: hoe kies je een product, wie vertrouw je, wat moet een merk doen om jouw keuken binnen te komen. En anders dan iedereen: <strong>wij publiceren de uitkomsten.</strong></p>
+      <div class="vm-fact">
+        <div class="f-lbl">Feit</div>
+        <p>Een openbaar, terugkerend onderzoek onder chefs bestaat in Nederland niet. Het enige kokspanel is besloten en betaald. Wij maken het open.</p>
       </div>
+      <p>Editie 01 is bewust klein: dertig chefs, vijf vragen, één A4. Klaar voor Gastvrij Rotterdam. Daarna elk kwartaal een nieuwe meting. Wie de data als eerste wil: appen, geen formulier.</p>
+      <a class="btn-primary" href="https://wa.me/31610367082?text=Ik%20wil%20de%20Vloermonitor%20als%20eerste%20ontvangen" target="_blank" rel="noopener">App "Vloermonitor" en je krijgt hem eerst</a>
+    </div>
+    <div class="vm-r reveal">
+      <div class="vm-r-head">
+        <span class="t">Vloermonitor</span>
+        <span class="e">EDITIE 01 // IN HET VELD</span>
+      </div>
+      <div class="vm-row"><span class="q">Waar hoorde je voor het laatst over een nieuw product dat je nu gebruikt?</span><span class="a hot">METING LOOPT</span></div>
+      <div class="vm-row"><span class="q">Wie vertrouw je bij een nieuwe leverancier: de vertegenwoordiger, een collega of de reclame?</span><span class="a hot">METING LOOPT</span></div>
+      <div class="vm-row"><span class="q">Heb je een product ooit gekozen zonder het eerst te testen of te proeven?</span><span class="a hot">METING LOOPT</span></div>
+      <div class="vm-row"><span class="q">Welk merk heeft zich het afgelopen jaar in jouw keuken laten zien?</span><span class="a hot">METING LOOPT</span></div>
+      <div class="vm-row"><span class="q">Wat moet een merk doen om op jouw kaart te komen?</span><span class="a hot">METING LOOPT</span></div>
     </div>
   </div>
 </section>
 
-<!-- 3. DE LABELS ALS MEDIANETWERK -->
+<!-- 4. VLOERTOETS -->
+<section id="vloertoets">
+  <div class="vt-header reveal">
+    <div class="vt-lbl">De Vloertoets // 2 minuten</div>
+    <h2>Haalt jouw marketing<br>de keuken?</h2>
+    <p>Acht stellingen, vier linies, één eerlijke uitslag. Wij bouwen quizzen voor de grootste namen in food. Dus ja, ook onze eigen site is er één.</p>
+  </div>
+  <div class="vt-box reveal">
+    <div class="vt-top">
+      <span class="t">APEX // VLOERTOETS</span>
+      <span class="n" id="vtCounter">START</span>
+    </div>
+    <div class="vt-progress"><div class="vt-progress-fill" id="vtProgress"></div></div>
+
+    <div class="vt-start-wrap" id="vtStart">
+      <p>Beantwoord acht stellingen over je eigen merk. Ja, nee, of eerlijk twijfelen. Je krijgt direct te zien in welke linie je yield weglekt. Geen e-mailadres nodig, geen formulier. Zo doen wij dat.</p>
+      <button class="btn-primary" onclick="vtBegin()">Start de toets</button>
+    </div>
+
+    <div class="vt-body" id="vtBody" style="display:none">
+      <div class="vt-linie" id="vtLinie"></div>
+      <div class="vt-q" id="vtQuestion"></div>
+      <div class="vt-answers">
+        <button class="vt-btn" onclick="vtAnswer(2)">Ja</button>
+        <button class="vt-btn" onclick="vtAnswer(1)">Eerlijk? Twijfel</button>
+        <button class="vt-btn" onclick="vtAnswer(0)">Nee</button>
+      </div>
+    </div>
+
+    <div class="vt-result" id="vtResult">
+      <div class="vt-verdict-lbl">Jouw uitslag</div>
+      <div class="vt-verdict" id="vtVerdict"></div>
+      <p class="vt-verdict-body" id="vtVerdictBody"></p>
+      <div class="vt-bars" id="vtBars"></div>
+      <div class="vt-cta-row">
+        <a class="btn-primary" id="vtWhatsapp" href="#" target="_blank" rel="noopener">App je uitslag naar ons</a>
+        <button class="btn-ghost" onclick="vtReset()">Opnieuw</button>
+      </div>
+      <div class="vt-note">Je uitslag blijft van jou. Er wordt niets opgeslagen of verstuurd totdat je zelf op appen drukt.</div>
+    </div>
+  </div>
+</section>
+
+<!-- 5. LABELS -->
 <section id="labels" class="grid">
-  <div class="section-lbl">Het netwerk</div>
-  <h2 class="section-title reveal">Vier labels.<br><em>Eén medianetwerk in de keuken.</em></h2>
-  <p class="section-sub reveal">Niet inkoopbaar, ook niet door een groot bureau. Per label één écht cijfer, aangeleverd door het team.</p>
+  <div class="sec-lbl">Het medianetwerk</div>
+  <h2 class="sec-title reveal">Vier eigen labels.<br><em>Eén vloer.</em></h2>
+  <p class="sec-sub reveal">Andere bureaus kopen bereik in bij media of influencers. Wij bezitten de plekken waar chefs leren, samenkomen en elkaar vertrouwen. <strong>Niet inkoopbaar, ook niet door een groot bureau.</strong> Per label één echt cijfer, uit de nulmeting.</p>
   <div class="label-grid reveal">
     <div class="label-card">
       <div class="label-photo"><img src="/assets/culiquiz.jpg" alt="CuliQuiz"></div>
       <div class="label-body">
         <span class="label-tag">Microlearning</span>
         <div class="label-name">CuliQuiz</div>
-        <p class="label-desc">Gamified microlearning, direct op de werkvloer en op horecascholen.</p>
+        <p class="label-desc">Gamified microlearning, dagelijks gespeeld op de werkvloer en op horecascholen. Merkcontact meetbaar tot op de speler.</p>
         <div class="label-stat">
           <div class="num todo">[CIJFER]</div>
-          <div class="what">bereikcijfer — team levert aan</div>
+          <div class="what">bereikcijfer volgt uit nulmeting</div>
         </div>
       </div>
     </div>
@@ -271,10 +445,10 @@ footer{background:var(--k);padding:40px 60px;display:flex;align-items:center;jus
       <div class="label-body">
         <span class="label-tag">Next gen</span>
         <div class="label-name">New Chefs</div>
-        <p class="label-desc">De community van de volgende generatie beslissers in de keuken.</p>
+        <p class="label-desc">De community van de volgende generatie beslissers. Merkvoorkeur bouwen vóórdat de carrière piekt.</p>
         <div class="label-stat">
           <div class="num todo">[CIJFER]</div>
-          <div class="what">bereikcijfer — team levert aan</div>
+          <div class="what">bereikcijfer volgt uit nulmeting</div>
         </div>
       </div>
     </div>
@@ -283,10 +457,10 @@ footer{background:var(--k);padding:40px 60px;display:flex;align-items:center;jus
       <div class="label-body">
         <span class="label-tag">Event</span>
         <div class="label-name">24H Chefs</div>
-        <p class="label-desc">Het culinaire charity-event tussen topchefs en high-end publiek.</p>
+        <p class="label-desc">Het culinaire charity-event tussen topchefs en high-end publiek, met landelijke media-aandacht.</p>
         <div class="label-stat">
           <div class="num todo">[CIJFER]</div>
-          <div class="what">bereikcijfer — team levert aan</div>
+          <div class="what">bereikcijfer volgt uit nulmeting</div>
         </div>
       </div>
     </div>
@@ -298,25 +472,25 @@ footer{background:var(--k);padding:40px 60px;display:flex;align-items:center;jus
         <p class="label-desc">Onaantastbare geloofwaardigheid aan de absolute top van de markt.</p>
         <div class="label-stat">
           <div class="num todo">[CIJFER]</div>
-          <div class="what">bereikcijfer — team levert aan</div>
+          <div class="what">bereikcijfer volgt uit nulmeting</div>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- 4. WAT JE KRIJGT: drie treden + zeven deliverables -->
+<!-- 6. TREDEN -->
 <section id="treden">
-  <div class="treden-lbl">Wat je krijgt</div>
-  <h2 class="treden-title reveal">Drie treden.<br><em>Prijs vooraf zichtbaar.</em></h2>
-  <p class="treden-sub reveal">De scanprijs staat er gewoon bij. Dat kwalificeert: wie belt, weet wat het kost.</p>
+  <div class="sec-lbl-d">Wat je krijgt</div>
+  <h2 class="sec-title-d reveal">Drie treden.<br><em>Prijs vooraf zichtbaar.</em></h2>
+  <p class="sec-sub-d reveal">De scanprijs staat er gewoon bij. Dat kwalificeert: wie belt, weet wat het kost.</p>
   <div class="treden-grid reveal">
     <div class="trede">
       <div class="trede-num">TREDE 01</div>
       <div class="trede-name">Strategy Scan</div>
       <div class="trede-sub2">Waar lekt je yield?</div>
-      <p class="trede-desc">Wij leggen bloot waar je marketinginvestering weglekt tussen strategie en vloer. Geen pitch, wel een eerlijk oordeel en de vloertoets.</p>
-      <div class="trede-price">€ [PRIJS]<small>prijs invullen — kwalificeert</small></div>
+      <p class="trede-desc">Wij leggen bloot waar je marketinginvestering weglekt tussen strategie en vloer. Geen pitch, wel een eerlijk oordeel en de vloertoets op jouw merk.</p>
+      <div class="trede-price">€ [PRIJS]<small>prijs invullen: kwalificeert</small></div>
     </div>
     <div class="trede">
       <div class="trede-num">TREDE 02</div>
@@ -330,14 +504,14 @@ footer{background:var(--k);padding:40px 60px;display:flex;align-items:center;jus
       <div class="trede-name">Vloerprogramma</div>
       <div class="trede-sub2">Activatie via de labels</div>
       <p class="trede-desc">Je merk structureel op de vloer via CuliQuiz, New Chefs, 24H Chefs en Gault&amp;Millau. Per kwartaal gemeten, per kwartaal bijgestuurd.</p>
-      <div class="trede-price">€ [PRIJS]<small>per kwartaal — invullen</small></div>
+      <div class="trede-price">€ [PRIJS]<small>per kwartaal, invullen</small></div>
     </div>
   </div>
   <div class="deliv reveal">
     <h3>Zeven markt-deliverables. <em>Afvinkbaar.</em></h3>
     <ul class="deliv-list">
       <li><span class="box"></span><span><strong>Positionering + commerciële propositie</strong> die geld beweegt, niet alleen hoofden.</span></li>
-      <li><span class="box"></span><span><strong>Vloermonitor:</strong> het kwartaalonderzoek onder chefs — hoe kiest een chef, met data die nergens anders bestaat.</span></li>
+      <li><span class="box"></span><span><strong>Vloermonitor:</strong> het kwartaalonderzoek onder chefs, met data die in Nederland nergens anders openbaar bestaat.</span></li>
       <li><span class="box"></span><span><strong>Campagneraamwerk + contentkalender</strong> die de vloer halen in plaats van de meeting room.</span></li>
       <li><span class="box"></span><span><strong>Activatie via de vier labels:</strong> je merk waar de koopbeslissing valt.</span></li>
       <li><span class="box"></span><span><strong>Beursformat:</strong> elk gesprek binnen 48 uur persoonlijk opgevolgd.</span></li>
@@ -347,12 +521,12 @@ footer{background:var(--k);padding:40px 60px;display:flex;align-items:center;jus
   </div>
 </section>
 
-<!-- 5. MEETBAAR -->
-<section id="meetbaar">
+<!-- 7. MEETBAAR -->
+<section id="meetbaar" class="grid">
   <div class="meet-inner">
     <div class="meet-l reveal">
-      <div class="meet-lbl">Meetbaar of eerlijk</div>
-      <h2>Wat levert<br>één euro op?</h2>
+      <div class="sec-lbl">Meetbaar of eerlijk</div>
+      <h2>Wat levert<br><em>één euro op?</em></h2>
       <p>Dat is de enige vraag die telt. Wij beginnen met een nulmeting en je kijkt live mee. En als iets niet meetbaar is, zeggen we dat gewoon.</p>
     </div>
     <div class="meet-points reveal">
@@ -372,57 +546,84 @@ footer{background:var(--k);padding:40px 60px;display:flex;align-items:center;jus
   </div>
 </section>
 
-<!-- 6. AFSLUITING: drie gezichten, geen formulier -->
-<section id="contact" class="grid">
+<!-- 8. KENNIS -->
+<section id="kennis" class="grid">
+  <div class="sec-lbl">Van de vloer</div>
+  <h2 class="sec-title reveal">Waarom wij doen<br><em>wat wij doen.</em></h2>
+  <p class="sec-sub reveal">Geen blog om het bloggen. Drie stukken die uitleggen waarom wij zo werken, met de onderzoeken erbij. Lees ze en je begrijpt ons hele bureau.</p>
+  <div class="kennis-grid reveal">
+    <a class="k-card" href="kennis/de-deal-valt-niet-in-je-feed.html">
+      <div class="k-photo"><img src="/assets/pain-keuken.jpg" alt=""></div>
+      <div class="k-body">
+        <div class="k-kicker">Onderzoek // 01</div>
+        <div class="k-title">De deal valt niet in je feed</div>
+        <p class="k-excerpt">800 nette mails leverden 7 aanmeldingen op. 160 persoonlijke berichten deden meer. Het onderzoek legt uit waarom dat geen toeval was.</p>
+        <span class="k-more">Lees het stuk →</span>
+      </div>
+    </a>
+    <a class="k-card" href="kennis/wie-de-demo-organiseert-wint.html">
+      <div class="k-photo"><img src="/assets/yield-vloer.jpg" alt=""></div>
+      <div class="k-body">
+        <div class="k-kicker">Onderzoek // 02</div>
+        <div class="k-title">Wie de demo organiseert, wint</div>
+        <p class="k-excerpt">91% van de inkopers zegt dat zelf testen de beslissing beïnvloedt. Slechts 52% test ooit echt. In dat gat ligt jouw omzet.</p>
+        <span class="k-more">Lees het stuk →</span>
+      </div>
+    </a>
+    <a class="k-card" href="kennis/chefs-vertrouwen-chefs.html">
+      <div class="k-photo"><img src="/assets/new-chefs.jpg" alt=""></div>
+      <div class="k-body">
+        <div class="k-kicker">Onderzoek // 03</div>
+        <div class="k-title">Chefs vertrouwen chefs</div>
+        <p class="k-excerpt">Unilever bewees het met eigen chefs: 98% volgersgroei in zeven weken. Nederland heeft nog geen chef-creatorprogramma. Nog niet.</p>
+        <span class="k-more">Lees het stuk →</span>
+      </div>
+    </a>
+  </div>
+</section>
+
+<!-- 9. CONTACT -->
+<section id="contact">
   <div class="contact-header reveal">
-    <div class="section-lbl">Contact</div>
+    <div class="sec-lbl-d">Contact</div>
     <h2>Geen formulier.<br><em>Gewoon bellen of appen.</em></h2>
     <p>Je krijgt geen accountmanager, je krijgt ons. Drie mensen die de vloer kennen, met een nummer dat gewoon opneemt.</p>
   </div>
   <div class="team-grid">
     <div class="tcard reveal">
-      <div class="tcard-photo-wrap">
-        <div class="bracket-frame">
-          <div class="bk-tr"></div><div class="bk-bl"></div>
-          <img src="/assets/marco.jpg" alt="Marco van Davenhorst" class="tcard-photo">
-        </div>
+      <div class="bracket-frame">
+        <div class="bk-tr"></div><div class="bk-bl"></div>
+        <img src="/assets/marco.jpg" alt="Marco van Davenhorst" class="tcard-photo">
       </div>
-      <div class="tcard-divider"></div>
-      <div class="tcard-body">
-        <div class="tcard-name">Marco van Davenhorst</div>
-        <div class="tcard-role">Journalist / Community Builder</div>
-        <a class="tcard-phone" href="tel:+31620645044">06 20 64 50 44</a>
-        <div class="tcard-mail"><a href="mailto:marco@apex-agency.nl">marco@apex-agency.nl</a></div>
+      <div class="tcard-name">Marco van Davenhorst</div>
+      <div class="tcard-role">Journalist / Community Builder</div>
+      <div class="tcard-actions">
+        <a class="tbtn fill" href="tel:+31620645044">Bel</a>
+        <a class="tbtn" href="https://wa.me/31620645044" target="_blank" rel="noopener">App</a>
       </div>
     </div>
     <div class="tcard reveal">
-      <div class="tcard-photo-wrap">
-        <div class="bracket-frame">
-          <div class="bk-tr"></div><div class="bk-bl"></div>
-          <img src="/assets/tjitze.jpg" alt="Tjitze van der Dam" class="tcard-photo">
-        </div>
+      <div class="bracket-frame">
+        <div class="bk-tr"></div><div class="bk-bl"></div>
+        <img src="/assets/tjitze.jpg" alt="Tjitze van der Dam" class="tcard-photo">
       </div>
-      <div class="tcard-divider"></div>
-      <div class="tcard-body">
-        <div class="tcard-name">Tjitze van der Dam</div>
-        <div class="tcard-role">Founder CuliQuiz &amp; Gault&amp;Millau NL</div>
-        <a class="tcard-phone" href="tel:+31610367082">06 10 36 70 82</a>
-        <div class="tcard-mail"><a href="mailto:tjitze@apex-agency.nl">tjitze@apex-agency.nl</a></div>
+      <div class="tcard-name">Tjitze van der Dam</div>
+      <div class="tcard-role">Founder CuliQuiz &amp; Gault&amp;Millau NL</div>
+      <div class="tcard-actions">
+        <a class="tbtn fill" href="tel:+31610367082">Bel</a>
+        <a class="tbtn" href="https://wa.me/31610367082" target="_blank" rel="noopener">App</a>
       </div>
     </div>
     <div class="tcard reveal">
-      <div class="tcard-photo-wrap">
-        <div class="bracket-frame">
-          <div class="bk-tr"></div><div class="bk-bl"></div>
-          <img src="/assets/laurens.jpg" alt="Laurens Claassens" class="tcard-photo">
-        </div>
+      <div class="bracket-frame">
+        <div class="bk-tr"></div><div class="bk-bl"></div>
+        <img src="/assets/laurens.jpg" alt="Laurens Claassens" class="tcard-photo">
       </div>
-      <div class="tcard-divider"></div>
-      <div class="tcard-body">
-        <div class="tcard-name">Laurens Claassens</div>
-        <div class="tcard-role">Foodservice Marketeer</div>
-        <a class="tcard-phone" href="tel:+31653334371">06 53 33 43 71</a>
-        <div class="tcard-mail"><a href="mailto:laurens@apex-agency.nl">laurens@apex-agency.nl</a></div>
+      <div class="tcard-name">Laurens Claassens</div>
+      <div class="tcard-role">Foodservice Marketeer</div>
+      <div class="tcard-actions">
+        <a class="tbtn fill" href="tel:+31653334371">Bel</a>
+        <a class="tbtn" href="https://wa.me/31653334371" target="_blank" rel="noopener">App</a>
       </div>
     </div>
   </div>
@@ -431,16 +632,128 @@ footer{background:var(--k);padding:40px 60px;display:flex;align-items:center;jus
 <footer>
   <div class="footer-logo"><img src="/assets/footer-logo.png" alt="APEX"></div>
   <div class="footer-meta">
-    CONCEPT NIEUWE SITE // INTERN<br>
-    NEDERLANDS EERST — ENGELSE SCHAKELAAR VOLGT
+    CONCEPT V2 // INTERN // NEDERLANDS EERST, ENGELSE SCHAKELAAR VOLGT<br>
+    BRONNEN: NIELSEN 2021 · RB/FSD PATH TO PURCHASE 2021 · FE&amp;S 2018 · EDELMAN-LINKEDIN 2024 · THE DRUM 2025
   </div>
 </footer>
 
 <script>
+// reveal
 const obs = new IntersectionObserver(els => {
   els.forEach(el => { if(el.isIntersecting) el.target.classList.add('on'); });
 }, {threshold:0.07});
 document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+
+// scroll progress
+window.addEventListener('scroll', () => {
+  const h = document.documentElement;
+  const p = h.scrollTop / (h.scrollHeight - h.clientHeight) * 100;
+  document.getElementById('scrollProgress').style.width = p + '%';
+});
+
+// ticker: duplicate content for seamless loop
+const tt = document.getElementById('tickerTrack');
+tt.innerHTML += tt.innerHTML;
+
+// animated counters
+const countObs = new IntersectionObserver(els => {
+  els.forEach(e => {
+    if(!e.isIntersecting) return;
+    const el = e.target, target = +el.dataset.target;
+    countObs.unobserve(el);
+    const t0 = performance.now(), dur = 1200;
+    (function step(t){
+      const f = Math.min((t - t0) / dur, 1);
+      el.textContent = Math.round(target * (1 - Math.pow(1 - f, 3)));
+      if(f < 1) requestAnimationFrame(step);
+    })(t0);
+  });
+}, {threshold:0.5});
+document.querySelectorAll('.count').forEach(el => countObs.observe(el));
+
+// === VLOERTOETS ===
+const VT = [
+  {linie:'Strategie', q:'Jullie salesteam geeft hetzelfde antwoord op "waarom dit merk?" als jullie laatste campagne.'},
+  {linie:'Strategie', q:'Jullie marketingdoelen zijn gekoppeld aan omzet, niet aan bereik.'},
+  {linie:'Vertaling', q:'Jullie laatste campagne is gezien op de plek waar de chef werkt.'},
+  {linie:'Vertaling', q:'Elke lead krijgt binnen 48 uur een persoonlijke opvolging.'},
+  {linie:'Vloer', q:'Een chef kan jullie product deze maand ergens proeven, testen of vasthouden.'},
+  {linie:'Vloer', q:'Jullie weten welke chefs het product al gebruiken, en laten dat zien.'},
+  {linie:'Impact', q:'Jullie weten wat één euro marketing vorig kwartaal heeft opgeleverd.'},
+  {linie:'Impact', q:'Als iets niet werkt, stopt het ook echt.'}
+];
+const LINIES = ['Strategie','Vertaling','Vloer','Impact'];
+const VERDICTS = {
+  Strategie: {kop:'De opbouw hapert.', body:'Iedereen rent, maar niemand weet naar welk doel. Campagnes zonder gedeelde richting zijn dure ruis. Eerst één verhaal dat sales en marketing allebei kunnen navertellen, dan pas gas geven.'},
+  Vertaling: {kop:'Het middenveld laat de bal vallen.', body:'De strategie is er, maar hij komt de keuken niet in. Daar lekt je yield: tussen het plan en de plek waar de chef werkt. Elke lead die niet binnen 48 uur wordt opgevolgd, is weggegooid budget.'},
+  Vloer: {kop:'Je spitsen staan vrij en krijgen geen bal.', body:'91% van de inkopers zegt dat zelf testen de koopbeslissing beïnvloedt, maar bijna niemand organiseert dat testen. De chef wil je product vasthouden, proeven, uitproberen. Wie de demo organiseert, wint.'},
+  Impact: {kop:'Niemand houdt de score bij.', body:'Misschien speel je prima, maar je weet het niet. Zonder nulmeting is elk marketinggesprek een meningenwedstrijd. Eerst meten wat één euro nu oplevert, daarna pas discussiëren.'}
+};
+let vtIdx = 0, vtScores = {Strategie:0, Vertaling:0, Vloer:0, Impact:0};
+
+function vtBegin(){
+  vtIdx = 0; vtScores = {Strategie:0, Vertaling:0, Vloer:0, Impact:0};
+  document.getElementById('vtStart').style.display = 'none';
+  document.getElementById('vtResult').style.display = 'none';
+  document.getElementById('vtBody').style.display = 'block';
+  vtShow();
+}
+function vtShow(){
+  const item = VT[vtIdx];
+  document.getElementById('vtLinie').textContent = 'Linie: ' + item.linie + ' // ' + (vtIdx + 1) + ' van 8';
+  document.getElementById('vtQuestion').textContent = item.q;
+  document.getElementById('vtCounter').textContent = (vtIdx + 1) + '/8';
+  document.getElementById('vtProgress').style.width = (vtIdx / 8 * 100) + '%';
+}
+function vtAnswer(score){
+  vtScores[VT[vtIdx].linie] += score;
+  vtIdx++;
+  if(vtIdx < VT.length){ vtShow(); } else { vtFinish(); }
+}
+function vtFinish(){
+  document.getElementById('vtBody').style.display = 'none';
+  document.getElementById('vtProgress').style.width = '100%';
+  document.getElementById('vtCounter').textContent = 'UITSLAG';
+  const res = document.getElementById('vtResult');
+  res.style.display = 'block';
+
+  const total = Object.values(vtScores).reduce((a,b)=>a+b,0);
+  let weakest = LINIES[0];
+  LINIES.forEach(l => { if(vtScores[l] < vtScores[weakest]) weakest = l; });
+
+  let kop, body;
+  if(total >= 14){
+    kop = 'Weinig lek. Serieus goed.';
+    body = 'Jullie hebben de basis staan waar de meeste merken alleen over praten. De vraag is nu niet repareren maar versnellen: meer vloer, meer bewijs, meer tempo. Daar praten we graag over mee.';
+  } else {
+    const v = VERDICTS[weakest];
+    kop = v.kop;
+    body = v.body + ' Je zwakste linie: ' + weakest.toLowerCase() + '. Een team is zo goed als zijn zwakste linie, dus daar beginnen wij.';
+  }
+  document.getElementById('vtVerdict').textContent = kop;
+  document.getElementById('vtVerdictBody').textContent = body;
+
+  const bars = document.getElementById('vtBars');
+  bars.innerHTML = '';
+  LINIES.forEach(l => {
+    const row = document.createElement('div');
+    row.className = 'vt-bar-row';
+    row.innerHTML = '<span class="lbl">' + l + '</span><div class="vt-bar-track"><div class="vt-bar-fill"></div></div><span class="sc">' + vtScores[l] + '/4</span>';
+    bars.appendChild(row);
+    requestAnimationFrame(() => requestAnimationFrame(() => {
+      row.querySelector('.vt-bar-fill').style.width = (vtScores[l] / 4 * 100) + '%';
+    }));
+  });
+
+  const msg = 'Ik deed de Vloertoets op apex-agency.nl. Uitslag: ' + total + '/16, zwakste linie: ' + weakest + '. Ik ben benieuwd wat jullie daarin zien.';
+  document.getElementById('vtWhatsapp').href = 'https://wa.me/31610367082?text=' + encodeURIComponent(msg);
+}
+function vtReset(){
+  document.getElementById('vtResult').style.display = 'none';
+  document.getElementById('vtStart').style.display = 'block';
+  document.getElementById('vtProgress').style.width = '0%';
+  document.getElementById('vtCounter').textContent = 'START';
+}
 </script>
 </body>
 </html>
